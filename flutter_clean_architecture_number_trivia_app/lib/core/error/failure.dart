@@ -5,6 +5,11 @@ abstract class Failure extends Equatable {
 
   Failure([properties]);
 
-  // @override
-  // List<Object> get props => [properties];
+  @override
+  List<Object> get props => [properties];
 }
+
+// General failures
+class ServerFailure extends Failure {}
+
+class CacheFailure extends Failure {}
